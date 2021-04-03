@@ -97,7 +97,7 @@ jobs:
       - name: Release Jar File
         uses: softprops/action-gh-release@v1
         with:
-          files: buildJar/${{needs.Assemble.outputs.jar_filename}}
+          files: ${{needs.Assemble.outputs.jar_filename}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
