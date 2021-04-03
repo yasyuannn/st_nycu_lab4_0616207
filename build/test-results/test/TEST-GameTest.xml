@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GameTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-04-03T14:14:14" hostname="Macintosh.local" time="0.136">
+  <properties/>
+  <testcase name="#1 - Test with argument=rock, rock, Draw!" classname="GameTest" time="0.046"/>
+  <testcase name="#2 - Test with argument=paper, paper, Draw!" classname="GameTest" time="0.002"/>
+  <testcase name="#3 - Test with argument=scissors, scissors, Draw!" classname="GameTest" time="0.003"/>
+  <testcase name="#1 - Test with argument=scissors, rock, Player 2 win!" classname="GameTest" time="0.002"/>
+  <testcase name="#2 - Test with argument=rock, paper, Player 2 win!" classname="GameTest" time="0.001"/>
+  <testcase name="#3 - Test with argument=paper, scissors, Player 2 win!" classname="GameTest" time="0.001"/>
+  <testcase name="#1 - Test with argument=rock" classname="GameTest" time="0.007"/>
+  <testcase name="#2 - Test with argument=paper" classname="GameTest" time="0.001"/>
+  <testcase name="#3 - Test with argument=scissors" classname="GameTest" time="0.0"/>
+  <testcase name="#1 - Test with argument=rock, scissors, Player 1 win!" classname="GameTest" time="0.002"/>
+  <testcase name="#2 - Test with argument=paper, rock, Player 1 win!" classname="GameTest" time="0.0"/>
+  <testcase name="#3 - Test with argument=scissors, paper, Player 1 win!" classname="GameTest" time="0.001"/>
+  <testcase name="#1 - Test with argument=Rock" classname="GameTest" time="0.003"/>
+  <testcase name="#2 - Test with argument=paper!" classname="GameTest" time="0.001"/>
+  <testcase name="#3 - Test with argument=scisors" classname="GameTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
