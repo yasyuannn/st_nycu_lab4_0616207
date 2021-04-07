@@ -33,9 +33,6 @@ jobs:
             ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: ${{ runner.os }}-gradle-
-      - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: /install.sh
         
   Test:
     needs: [ Compile ]
@@ -59,9 +56,6 @@ jobs:
             ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: ${{ runner.os }}-gradle-
-      - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: /install.sh
 
       - name: Test with Gradle
         run: ./gradlew test
@@ -97,9 +91,6 @@ jobs:
             ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: ${{ runner.os }}-gradle-
-      - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: /install.sh
 
       - name: Assemble with Gradle
         run: ./gradlew assemble
